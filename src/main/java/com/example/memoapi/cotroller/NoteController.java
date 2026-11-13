@@ -39,7 +39,6 @@ public class NoteController {
 
 //        HttpHeaders headers = new HttpHeaders();
 //        headers.setLocation(location);
-//
 //        return new ResponseEntity<>(createdNote, headers, HttpStatus.CREATED);
 
         return ResponseEntity.created(location).body(createdNote);
